@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>行銷自動化診所 | Marketing Automation Clinic</title>
+  <meta name="description" content="結合「行銷策略深度」與「Python/JS 開發實力」，專為個人創作者與微型品牌打造低維護、高回報的 AI 自動化工作流。">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-geek-bg text-geek-muted font-mono min-h-screen selection:bg-geek-primary/20 selection:text-geek-primary antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-geek-bg/80 backdrop-blur-md border-b border-geek-dark">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="text-geek-primary font-bold text-lg">&gt; Clinic.ai</span>
+        <span class="w-1.5 h-4 bg-geek-primary animate-pulse group-hover:bg-geek-main"></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#skills" class="text-geek-muted hover:text-geek-primary transition-colors duration-300">// 專業能力</a>
+        <a href="#packages" class="text-geek-muted hover:text-geek-primary transition-colors duration-300">// 服務方案</a>
+        <a href="#funnel" class="text-geek-muted hover:text-geek-primary transition-colors duration-300">// 預約健診</a>
+      </nav>
+      <div>
+        <a href="#funnel" class="bg-geek-primary text-geek-bg font-bold text-xs px-4 py-2 rounded-md hover:bg-transparent hover:text-geek-primary border border-geek-primary transition-all duration-300 inline-block">
+          [ 立即健診 ]
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section id="hero" class="max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-28 flex flex-col justify-center items-start relative overflow-hidden">
+      <!-- 科技感背景裝飾 -->
+      <div class="absolute right-0 top-1/4 -z-10 opacity-10 pointer-events-none select-none hidden lg:block">
+        <pre class="text-xs text-geek-primary leading-none font-mono">
+┌────────────────────────────────────────┐
+│  SYSTEM STATUS: ONLINE                 │
+│  MODEL: GEMINI-3.5-FLASH-MEDIUM        │
+│  CORE TEMP: OPTIMAL                    │
+│  AUTOMATION_ENGINE: RUNNING            │
+└────────────────────────────────────────┘
+        </pre>
+      </div>
+
+      <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 border border-geek-dark rounded bg-geek-surface">
+        <span class="w-2 h-2 rounded-full bg-geek-primary animate-ping"></span>
+        <span class="text-xs tracking-widest text-geek-primary uppercase">// IPAS AI 應用規劃師認證</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-geek-main leading-tight max-w-4xl">
+        用技術解決行銷難題，<br>
+        把時間留給創意。
+      </h1>
+
+      <p class="mt-6 text-base md:text-lg text-geek-muted max-w-2xl leading-relaxed">
+        我們結合「行銷策略深度」與「Python/JS 開發實力」，專為個人創作者與微型品牌打造低維護、高回報的 AI 自動化工作流。告別重複雜務，實現高效數位營運。
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#funnel" class="bg-geek-primary text-geek-bg font-mono font-bold text-sm px-6 py-3.5 rounded-md hover:bg-transparent hover:text-geek-primary border border-geek-primary transition-all duration-300 text-center">
+          [ 立即填表，預約 AI 效率健診 ]
+        </a>
+        <a href="#packages" class="bg-transparent text-geek-primary border border-geek-primary font-mono font-medium text-sm px-6 py-3.5 rounded-md hover:bg-geek-primary/10 transition-all duration-300 text-center">
+          了解解決方案 _
+        </a>
+      </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="border-y border-geek-dark bg-geek-surface/50">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-28">
+        <div class="max-w-3xl">
+          <span class="text-xs tracking-widest text-geek-primary uppercase mb-2 block">// TARGET_PROBLEMS</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-geek-main mb-6">身為一人公司或微型團隊，你是否也常面臨這些困境？</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <!-- Card 1 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-colors duration-300">
+            <div class="text-xs text-geek-primary mb-3">01 / TIME_DRAIN</div>
+            <h3 class="text-lg font-semibold text-geek-main mb-3">時間被雜務吃掉</h3>
+            <p class="text-sm leading-relaxed">每天花好幾個小時在處理重複的社群排版、手動複製貼上、或是跨平台發布內容？這些重複性工作正在慢慢吞噬你專注核心產品的心力。</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-colors duration-300">
+            <div class="text-xs text-geek-primary mb-3">02 / DATA_LOST</div>
+            <h3 class="text-lg font-semibold text-geek-main mb-3">數據看得到吃不到</h3>
+            <p class="text-sm leading-relaxed">電商後台、廣告後台的數據堆積如山，卻因為沒有多餘的時間和技術去進行清洗與彙整，無法將它們轉化為真正能指引營運決策的行銷圖表？</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-colors duration-300">
+            <div class="text-xs text-geek-primary mb-3">03 / AI_HALLUCINATION</div>
+            <h3 class="text-lg font-semibold text-geek-main mb-3">AI 總是胡說八道</h3>
+            <p class="text-sm leading-relaxed">嘗試過市面上的通用 AI 客服，卻經常回答不精準，甚至虛構您的產品資訊，不但無法減輕客服工作，反而造成了更多品牌信任公關危機？</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-colors duration-300">
+            <div class="text-xs text-geek-primary mb-3">04 / EXECUTION_GAP</div>
+            <h3 class="text-lg font-semibold text-geek-main mb-3">知道 AI 強大，不知從何開始</h3>
+            <p class="text-sm leading-relaxed">每天看著各種科技新知和 AI 工具感到無比焦慮，很想導入以提升效率，卻找不到人協助您針對具體商務痛點進行真正的方案落地？</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-28">
+      <div class="max-w-3xl">
+        <span class="text-xs tracking-widest text-geek-primary uppercase mb-2 block">// CORE_CAPABILITIES</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-geek-main mb-6">我們如何將技術轉化為商業價值</h2>
+        <p class="text-base text-geek-muted">我們不只懂程式，更懂市場。以策略為核心，用代碼做武器。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <!-- Skill 1 -->
+        <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-all duration-300 hover:translate-y-[-2px]">
+          <div class="text-xs text-geek-primary mb-2">// 01 / STRATEGY</div>
+          <h3 class="text-base font-semibold text-geek-main mb-3">行銷策略規劃</h3>
+          <p class="text-xs leading-relaxed text-geek-muted">擁有豐富的數位行銷與市場營運實戰經驗，確保每一行代碼、每一次自動化流程的設計，都緊密對焦於您的「營收與商務成長」。</p>
+        </div>
+        <!-- Skill 2 -->
+        <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-all duration-300 hover:translate-y-[-2px]">
+          <div class="text-xs text-geek-primary mb-2">// 02 / PYTHON</div>
+          <h3 class="text-base font-semibold text-geek-main mb-3">Python 自動化開發</h3>
+          <p class="text-xs leading-relaxed text-geek-muted">精通 Python 爬蟲與自動化流程設計，專門解決現成軟體或 SaaS 工具無法實現的深度客製化數據獲取與作業效率優化。</p>
+        </div>
+        <!-- Skill 3 -->
+        <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-all duration-300 hover:translate-y-[-2px]">
+          <div class="text-xs text-geek-primary mb-2">// 03 / RAG_AGENT</div>
+          <h3 class="text-base font-semibold text-geek-main mb-3">RAG AI 知識工程</h3>
+          <p class="text-xs leading-relaxed text-geek-muted">利用 Dify 工作流與 Google Gemini API，清洗您的零散品牌文件，將資料轉化為 100% 精準回答、無幻覺的專屬 AI Agent。</p>
+        </div>
+        <!-- Skill 4 -->
+        <div class="bg-geek-surface border border-geek-dark rounded-md p-6 hover:border-geek-primary/40 transition-all duration-300 hover:translate-y-[-2px]">
+          <div class="text-xs text-geek-primary mb-2">// 04 / CERTIFIED</div>
+          <h3 class="text-base font-semibold text-geek-main mb-3">專業認證背書</h3>
+          <p class="text-xs leading-relaxed text-geek-muted">持有國家級 IPAS AI 應用規劃師專業認證，提供系統化、安全且符合業界標準的 AI 系統導入與規劃路徑。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Packages Section -->
+    <section id="packages" class="border-t border-geek-dark bg-geek-surface/20">
+      <div class="max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-28">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs tracking-widest text-geek-primary uppercase mb-2 block">// SERVICE_CATALOG</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-geek-main mb-4">階梯式解決方案</h2>
+          <p class="text-base text-geek-muted">從輕量諮詢到深度系統部署，明確的交付物邊界，維持高效合作。</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Package 1 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 flex flex-col justify-between hover:border-geek-primary/40 transition-colors duration-300 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-12 h-12 bg-geek-primary/5 rounded-bl-full flex items-center justify-center border-l border-b border-geek-dark text-xs text-geek-primary font-bold">01</div>
+            <div>
+              <span class="text-[10px] bg-geek-dark text-geek-primary px-2 py-0.5 rounded font-mono uppercase">Consulting</span>
+              <h3 class="text-lg font-bold text-geek-main mt-3 mb-2">【AI 策略健診】</h3>
+              <p class="text-xs text-geek-muted mb-4 leading-relaxed">釐清瓶頸，規劃最適合的 AI 自動化導入路徑圖，避免盲目採購工具。</p>
+              <div class="border-t border-geek-dark py-3">
+                <span class="text-xs text-geek-main font-bold block mb-1">技術支援：</span>
+                <span class="text-xs text-geek-muted">多維度評估表、1-on-1 線上對談</span>
+              </div>
+            </div>
+            <div class="border-t border-geek-dark pt-4 mt-4">
+              <span class="text-xs text-geek-main font-bold block mb-1">主要交付物：</span>
+              <span class="text-xs text-geek-primary block mb-4">■ AI 自動化落地藍圖 PDF</span>
+              <a href="#funnel" class="w-full block bg-transparent hover:bg-geek-primary hover:text-geek-bg text-geek-primary border border-geek-primary/60 hover:border-geek-primary text-center font-mono font-bold text-xs py-2 rounded transition-all duration-300">
+                [ 預約健診 ]
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 flex flex-col justify-between hover:border-geek-primary/40 transition-colors duration-300 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-12 h-12 bg-geek-primary/5 rounded-bl-full flex items-center justify-center border-l border-b border-geek-dark text-xs text-geek-primary font-bold">02</div>
+            <div>
+              <span class="text-[10px] bg-geek-dark text-geek-primary px-2 py-0.5 rounded font-mono uppercase">Script</span>
+              <h3 class="text-lg font-bold text-geek-main mt-3 mb-2">【社群轉化引擎】</h3>
+              <p class="text-xs text-geek-muted mb-4 leading-relaxed">將核心長文一鍵拆解，並自動轉化為 Threads/IG/FB 合適的素材與語氣。</p>
+              <div class="border-t border-geek-dark py-3">
+                <span class="text-xs text-geek-main font-bold block mb-1">技術規格：</span>
+                <span class="text-xs text-geek-muted">Python 腳本、LLM API、Colab 部署</span>
+              </div>
+            </div>
+            <div class="border-t border-geek-dark pt-4 mt-4">
+              <span class="text-xs text-geek-main font-bold block mb-1">主要交付物：</span>
+              <span class="text-xs text-geek-primary block mb-4">■ 腳本代碼 + 提示詞 + 教學影片</span>
+              <a href="#funnel" class="w-full block bg-transparent hover:bg-geek-primary hover:text-geek-bg text-geek-primary border border-geek-primary/60 hover:border-geek-primary text-center font-mono font-bold text-xs py-2 rounded transition-all duration-300">
+                [ 預約此方案 ]
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 flex flex-col justify-between hover:border-geek-primary/40 transition-colors duration-300 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-12 h-12 bg-geek-primary/5 rounded-bl-full flex items-center justify-center border-l border-b border-geek-dark text-xs text-geek-primary font-bold">03</div>
+            <div>
+              <span class="text-[10px] bg-geek-dark text-geek-primary px-2 py-0.5 rounded font-mono uppercase">Data</span>
+              <h3 class="text-lg font-bold text-geek-main mt-3 mb-2">【數據自動化管家】</h3>
+              <p class="text-xs text-geek-muted mb-4 leading-relaxed">自動清洗雜亂的後台資料，產出具備行銷洞察的自動化視覺化儀表板。</p>
+              <div class="border-t border-geek-dark py-3">
+                <span class="text-xs text-geek-main font-bold block mb-1">技術規格：</span>
+                <span class="text-xs text-geek-muted">Pandas、Sheets API、Looker Studio</span>
+              </div>
+            </div>
+            <div class="border-t border-geek-dark pt-4 mt-4">
+              <span class="text-xs text-geek-main font-bold block mb-1">主要交付物：</span>
+              <span class="text-xs text-geek-primary block mb-4">■ 資料處理腳本 + 視覺化儀表板</span>
+              <a href="#funnel" class="w-full block bg-transparent hover:bg-geek-primary hover:text-geek-bg text-geek-primary border border-geek-primary/60 hover:border-geek-primary text-center font-mono font-bold text-xs py-2 rounded transition-all duration-300">
+                [ 預約此方案 ]
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 4 -->
+          <div class="bg-geek-surface border border-geek-dark rounded-md p-6 flex flex-col justify-between hover:border-geek-primary/40 transition-colors duration-300 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-12 h-12 bg-geek-primary/5 rounded-bl-full flex items-center justify-center border-l border-b border-geek-dark text-xs text-geek-primary font-bold">04</div>
+            <div>
+              <span class="text-[10px] bg-geek-dark text-geek-primary px-2 py-0.5 rounded font-mono uppercase">Enterprise</span>
+              <h3 class="text-lg font-bold text-geek-main mt-3 mb-2">【RAG 電商客服】</h3>
+              <p class="text-xs text-geek-muted mb-4 leading-relaxed">建立專屬 AI 店長，基於產品知識庫進行精準問答，徹底告別 AI 幻覺。</p>
+              <div class="border-t border-geek-dark py-3">
+                <span class="text-xs text-geek-main font-bold block mb-1">技術規格：</span>
+                <span class="text-xs text-geek-muted">Dify 工作流、Gemini API、知識庫優化</span>
+              </div>
+            </div>
+            <div class="border-t border-geek-dark pt-4 mt-4">
+              <span class="text-xs text-geek-main font-bold block mb-1">主要交付物：</span>
+              <span class="text-xs text-geek-primary block mb-4">■ Dify 部署 + 知識庫清洗 + 訓練</span>
+              <a href="#funnel" class="w-full block bg-transparent hover:bg-geek-primary hover:text-geek-bg text-geek-primary border border-geek-primary/60 hover:border-geek-primary text-center font-mono font-bold text-xs py-2 rounded transition-all duration-300">
+                [ 預約此方案 ]
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualification Funnel Section -->
+    <section id="funnel" class="border-t border-geek-dark max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- 左側資訊說明 -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs tracking-widest text-geek-primary uppercase mb-2 block">// QUALIFICATION_FUNNEL</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-geek-main mb-6">預約 AI 效率健診</h2>
+            <p class="text-sm leading-relaxed mb-6">
+              為了保障交付品質，本服務採「專案交付制」，日常溝通以 Email 與專案管理工具為主。
+            </p>
+            <div class="bg-geek-surface border border-geek-dark rounded-md p-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-geek-primary font-bold text-sm">💡</span>
+                <div class="text-xs text-geek-muted leading-relaxed">
+                  <strong class="text-geek-main block mb-1">填寫須知：</strong>
+                  請花 2 分鐘如實填寫以下問卷。本診所將在評估您目前的商務流程、痛點與現有原始資料整理狀況後，主動與您聯繫。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-xs text-geek-muted border-t border-geek-dark/60 pt-4 hidden lg:block">
+            <span>// FORM_SECURE_CONNECTION: ESTABLISHED</span>
+          </div>
+        </div>
+
+        <!-- 右側問卷表單 -->
+        <div class="lg:col-span-7 bg-geek-surface border border-geek-dark rounded-md p-6 md:p-8 relative">
+          <!-- 成功提交畫面 (預設隱藏) -->
+          <div id="form-success" class="hidden absolute inset-0 bg-geek-surface z-10 flex flex-col items-center justify-center p-6 text-center rounded-md">
+            <span class="text-4xl text-geek-primary mb-4">✔</span>
+            <h3 class="text-xl font-bold text-geek-main mb-2">// SUBMIT_SUCCESS</h3>
+            <p class="text-sm text-geek-muted max-w-md mb-6">
+              您的申請表單已成功加密傳送至後端 Google Form。我們將於評估後主動以 Email 或 LINE 聯繫您，感謝您的填寫。
+            </p>
+            <button id="reset-form-btn" class="bg-transparent text-geek-primary border border-geek-primary text-xs px-4 py-2 rounded hover:bg-geek-primary/10 transition-colors duration-300">
+              [ 重新填寫 ]
+            </button>
+          </div>
+
+          <!-- 表單 -->
+          <form id="clinic-form" class="flex flex-col gap-6">
+            <!-- Q1. 姓名 -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q1. 您的主要聯絡姓名？ <span class="text-geek-primary">*</span></label>
+              <input type="text" name="name" required class="bg-geek-bg border border-geek-dark rounded-md px-4 py-3 text-geek-main font-mono text-sm focus:outline-none focus:border-geek-primary transition-colors duration-300" placeholder="請輸入您的稱呼" />
+            </div>
+
+            <!-- Q2. Email -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q2. 您的電子信箱 (Email)？ <span class="text-geek-primary">*</span></label>
+              <input type="email" name="email" required class="bg-geek-bg border border-geek-dark rounded-md px-4 py-3 text-geek-main font-mono text-sm focus:outline-none focus:border-geek-primary transition-colors duration-300" placeholder="example@domain.com" />
+            </div>
+
+            <!-- Q3. Line ID -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q3. 您的 LINE ID 或其他即時聯絡方式？ <span class="text-geek-primary">*</span></label>
+              <input type="text" name="line_id" required class="bg-geek-bg border border-geek-dark rounded-md px-4 py-3 text-geek-main font-mono text-sm focus:outline-none focus:border-geek-primary transition-colors duration-300" placeholder="請輸入 LINE ID 或微信等聯絡帳號" />
+            </div>
+
+            <!-- Q4. 痛點選擇 -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q4. 您目前在商務營運上，最感到頭痛、最消耗時間的環節是？ <span class="text-geek-primary">*</span></label>
+              <select name="pain_point" required class="bg-geek-bg border border-geek-dark rounded-md px-4 py-3 text-geek-main font-mono text-sm focus:outline-none focus:border-geek-primary transition-colors duration-300 cursor-pointer">
+                <option value="" disabled selected class="text-geek-muted">請選擇痛點選項...</option>
+                <option value="社群文案產出與多平台排版發布">社群文案產出與多平台排版發布</option>
+                <option value="廣告或電商後台數據雜亂、沒時間分析">廣告或電商後台數據雜亂、沒時間分析</option>
+                <option value="瑣碎的客戶日常問題回覆">瑣碎的客戶日常問題回覆</option>
+                <option value="我想用 AI 提升效率，但完全沒有頭緒">我想用 AI 提升效率，但完全沒有頭緒</option>
+              </select>
+            </div>
+
+            <!-- Q5. 描述任務 -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q5. 請用一句話描述，您最希望被「自動化」或交給 AI 處理的任務是什麼？ <span class="text-geek-primary">*</span></label>
+              <textarea name="description" required rows="3" class="bg-geek-bg border border-geek-dark rounded-md px-4 py-3 text-geek-main font-mono text-sm focus:outline-none focus:border-geek-primary transition-colors duration-300 resize-none" placeholder="例如：我希望每天下午自動把後台訂單匯出，並發送出貨通知簡訊給客人。"></textarea>
+            </div>
+
+            <!-- Q6. 原始資料狀況 -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q6. 針對您想解決的問題，目前手邊的「原始資料」整理狀況如何？ <span class="text-geek-primary">*</span></label>
+              <div class="flex flex-col gap-3 mt-1 bg-geek-bg/40 p-4 border border-geek-dark rounded-md">
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="data_status" required value="已有整理好的產品手冊 / FAQ Word 檔 / 結構化報表" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>已有整理好的產品手冊 / FAQ Word 檔 / 結構化報表</span>
+                </label>
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="data_status" value="只有散落的文件、網站內容或對話紀錄，需要協助整理" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>只有散落的文件、網站內容或對話紀錄，需要協助整理</span>
+                </label>
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="data_status" value="目前完全沒有任何現成資料" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>目前完全沒有任何現成資料</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Q7. 預期時間 -->
+            <div class="flex flex-col gap-2">
+              <label class="text-xs font-mono text-geek-main uppercase tracking-wider">&gt; Q7. 您的預期上線或希望看到成效的時間大約是？ <span class="text-geek-primary">*</span></label>
+              <div class="flex flex-col gap-3 mt-1 bg-geek-bg/40 p-4 border border-geek-dark rounded-md">
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="timeframe" required value="希望在一週內快速看到成效" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>希望在一週內快速看到成效</span>
+                </label>
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="timeframe" value="一個月內皆可，希望能穩定運行" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>一個月內皆可，希望能穩定運行</span>
+                </label>
+                <label class="flex items-center gap-3 text-xs text-geek-muted cursor-pointer hover:text-geek-main transition-colors duration-200">
+                  <input type="radio" name="timeframe" value="目前還在評估階段，想先諮詢了解" class="accent-geek-primary w-4 h-4 cursor-pointer" />
+                  <span>目前還在評估階段，想先諮詢了解</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 提交按鈕 -->
+            <div class="mt-4 flex flex-col gap-2">
+              <button type="submit" id="submit-btn" class="bg-geek-primary text-geek-bg font-mono font-bold text-sm px-6 py-4 rounded-md hover:bg-transparent hover:text-geek-primary border border-geek-primary transition-all duration-300 w-full">
+                [ 提交診斷表單，建立安全連線 ]
+              </button>
+              <span class="text-[10px] text-geek-muted text-center">// SECURE SSL: TLS_1.3_AES_256_GCM</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-geek-dark bg-geek-bg">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 py-12 flex flex-col md:flex-row justify-between gap-8 items-start md:items-center">
+      <div class="max-w-md">
+        <span class="text-xs text-geek-primary font-bold block mb-2">// LEGAL_DISCLAIMER</span>
+        <p class="text-xs leading-relaxed text-geek-muted mb-2">
+          <strong>接案防護條款：</strong>本網站所提供之解決方案皆採客製專案或標準模組交付，不包含 24 小時即時通訊軟體技術待命。
+        </p>
+        <p class="text-xs leading-relaxed text-geek-muted">
+          <strong>第三方平台費用：</strong>所有因專案衍生之第三方平台費用（包括但不限於 Dify Cloud 訂閱費、Google Gemini API 使用費）均須由客戶自行綁定信用卡直接向官方支付，本服務不經手中間費用。
+        </p>
+      </div>
+      <div class="text-left md:text-right">
+        <span class="text-xs text-geek-primary font-bold block mb-2">// CLINIC_META</span>
+        <span class="text-xs text-geek-muted block mb-1">Clinic Status: Online</span>
+        <span class="text-[10px] text-geek-muted block">© 2026 AI Marketing Automation Studio. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 隱藏 iframe 用於 Google Forms 靜默提交 Fallback -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-geek-bg text-geek-muted font-mono selection:bg-geek-primary/20 selection:text-geek-primary;
+    background-color: #05070A;
+  }
+
+  /* 極客風格自訂滾動條 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05070A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1F2937;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00FF66;
+  }
+}
